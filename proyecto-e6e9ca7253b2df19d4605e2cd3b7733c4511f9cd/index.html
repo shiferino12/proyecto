@@ -12,14 +12,37 @@
 
 <body>
 
-    <header class="container-fluid bg-dark">
-        <h1>JSJS</h1>
+    <header class="container-fluid bg-dark" style="padding: 0;">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
     </header>
 
     <main>
         <div class="container-fluid">
             <div class="row ">
-                <div class="col bg-danger d-flex justify-content-center">
+                <div class="col bg-danger d-flex justify-content-center" id="mapa">
                     <iframe src="https://www.google.com/maps/d/embed?mid=1JeqzBIE05PxeGnPXFTZoVdxIbHCnWS0&ehbc=2E312F"
                         width="100%" height="580"></iframe>
                 </div>
@@ -29,7 +52,7 @@
             <div class="col bg-info">
                 <div class="row">
                     <div class="col d-flex justify-content-center">
-                        <div class="card " style="width: 18rem;">
+                        <div class="card border border-primary border border-2" style="width: 20rem; margin-right: 400px;">
                             <div id="carouselC1Fade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
@@ -60,10 +83,7 @@
                             </div>
                         </div>
 
-
-
-
-                        <div class="card" style="width: 18rem; ">
+                        <div class="card border border-primary border border-2" style="width: 20rem; margin-left: 400px;  ">
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div id="carouselExampleFade" class="carousel slide carousel-fade"
